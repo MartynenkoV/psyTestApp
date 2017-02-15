@@ -1,0 +1,18 @@
+.container
+  .row.row-centered
+    .col-sm-1
+    .col-sm-10
+      .testwraper
+        br
+        br
+        .row.row-centered
+          .col-sm-4
+          .col-sm-4
+            .imagezoom
+              img.img-thumbnail(src='{{imageUrl}}')
+            br
+        p {{progress}} {{"siRun" | translate}}
+        .row.row-centered.row-toppad
+          .col-sm-6.col-botpad(ng-repeat='i in [1,2,3,4]')
+            button.btn.btn-primary.btn-block(ng-click='nextQuestion(i)' type='button') {{options[i-1]}}
+     

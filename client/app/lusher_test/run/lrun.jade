@@ -1,0 +1,19 @@
+.container
+  .testwraper
+    div(ng-show = 'quizPhase')
+      h4
+        | {{"lrunp1" | translate}}
+      .row.row-toppad
+        .col-sm-3.col-xs-6.col-botpad(ng-repeat='i in [0,1,2,3]')
+          a(href ='#' ng-hide = 'hideColors[i]' ng-click = 'pickColor(i)') 
+           div(style='background-color:{{colors[i]}};height:15vw;') 
+      .row
+        .col-sm-3.col-xs-6.col-botpad(ng-repeat='i in [4,5,6,7]')
+          a(href ='#' ng-hide = 'hideColors[i]' ng-click = 'pickColor(i)') 
+           div(style='background-color:{{colors[i]}};height:15vw;') 
+    div(ng-show = '!quizPhase')
+      h4 {{"lrunp2" | translate}}
+      p
+        |{{"lrunp3" | translate}}
+      button.btn.btn-primary.btn-sm(type='button' ng-click = 'secondquiz()') {{"startButton" | translate}}
+     

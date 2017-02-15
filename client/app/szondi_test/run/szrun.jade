@@ -1,0 +1,18 @@
+.container
+  .testwraper
+    h4(ng-hide='!positivePhase')
+      | {{"szrunp1" | translate}} 
+      span.text-success {{"szrunp2" | translate}}
+      |  {{"szrunp4" | translate}}
+    h4(ng-hide='positivePhase')
+      | {{"szrunp1" | translate}}  
+      span.text-danger {{"szrunp3" | translate}}
+      |  {{"szrunp4" | translate}}
+    .row.row-toppad
+      .col-sm-3.col-xs-6.col-botpad(ng-repeat='i in [0,1,2,3]')
+        a(href ='#' ng-click = 'pickPortrait(i)') 
+          img.img-responsive(src='{{portraits[i].imageUrl}}' ng-hide='hidePortraits[i]')
+    .row
+      .col-sm-3.col-xs-6.col-botpad(ng-repeat='i in [4,5,6,7]')
+        a(href ='#' ng-click = 'pickPortrait(i)') 
+          img.img-responsive(src='{{portraits[i].imageUrl}}' ng-hide='hidePortraits[i]')      

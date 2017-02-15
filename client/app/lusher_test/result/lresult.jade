@@ -1,0 +1,32 @@
+.container
+  div
+    h2.text-success {{"lres" | translate}}
+    // p +	+	×	×	=	−	−   оаз батонс
+    p
+      b {{"lplf" | translate}}
+      br
+      span(ng-repeat = 'data in result.pl') 
+        br
+        |{{data}}
+        br
+    p
+      b {{"lxf" | translate}}
+      span(ng-repeat = 'data in result.x') 
+        br
+        |{{data}}
+    p
+      b {{"leqf" | translate}}
+      span(ng-repeat = 'data in result.eq') 
+        br
+        |{{data}}
+    p
+      b {{"lminf" | translate}}
+      span(ng-repeat = 'data in result.m') 
+        br
+        |{{data}}
+    p
+      b {{"lplmf" | translate}}
+      span(ng-repeat = 'data in result.plm') 
+        br
+        |{{data}}
+   

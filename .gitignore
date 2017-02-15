@@ -1,0 +1,17 @@
+node_modules
+public
+.tmp
+.idea
+client/bower_components
+client/assets
+dist
+/server/config/local.env.js
+npm-debug.log
+coverage
+data
+mongod
+README.md
+plan
+.c9
+.*
+!/.gitignore

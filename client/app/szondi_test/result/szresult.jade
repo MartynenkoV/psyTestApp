@@ -1,0 +1,56 @@
+.container
+  div
+    h3.text-success {{"szreslogo" | translate}}
+    // p розрахункі кнопкі для шарінгу вектор S (− 0) P (0 +) Sch (± ±) C (− 0) 
+    // p
+    //   | описание
+    p
+      h4 {{"szresp1" | translate}}
+    p 
+      b {{"szresp2" | translate}}
+      br
+      |{{vectorInfo['S']}}
+    p
+      b {{"szresp3" | translate}}
+      br
+      |{{vectorInfo['P']}}
+    p
+      b {{"szresp4" | translate}}
+      br
+      |{{vectorInfo['Sch']}}
+    p
+      b {{"szresp5" | translate}}
+      br
+      |{{vectorInfo['C']}}
+    p
+      h4 {{"szresp6" | translate}}
+    p  
+      b {{"szresp7" | translate}}
+      span(ng-repeat = 'drive in mainDrives')
+        br
+        |{{drive.Activities}}
+    p
+      b {{"szresp8" | translate}}
+      span(ng-repeat = 'drive in mainDrives') 
+        br
+        |{{drive.OccupationObject}}
+    p  
+      b {{"szresp9" | translate}}
+      span(ng-repeat = 'drive in mainDrives') 
+        br
+        |{{drive.Goal}}
+    p  
+      b {{"szresp10" | translate}}
+      span(ng-repeat = 'drive in mainDrives') 
+        br
+        |{{drive.Place}}
+    p  
+      b {{"szresp11" | translate}}
+      span(ng-repeat = 'drive in mainDrives') 
+        br
+        |{{drive.RelationsWithOthers}}
+    p  
+      b {{"szresp12" | translate}}
+      span(ng-repeat = 'drive in mainDrives') 
+        br
+        |{{drive.DiseasesDeformation}}
